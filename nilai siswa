@@ -1,0 +1,18 @@
+nama = input("Masukkan nama siswa: ")
+nilai = int(input("Masukkan nilai: "))
+kehadiran = int(input("Masukkan kehadiran (%): "))
+
+if nilai >= 75 and kehadiran >= 80:
+    print("\nNama:", nama)
+    print("Nilai:", nilai)
+    print("Status: LULUS")
+
+elif nilai >= 75 or kehadiran >= 80:
+    print("\nNama:", nama)
+    print("Nilai:", nilai)
+    print("Status: REMEDIAL")
+
+else:
+    print("\nNama:", nama)
+    print("Nilai:", nilai)
+    print("Status: TIDAK LULUS")
